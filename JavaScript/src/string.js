@@ -16,3 +16,4 @@ Student({name:"gggg"})
 console.log("name:",name)
 
 console.log("student ",wang)
+console.log("student ",wang)
