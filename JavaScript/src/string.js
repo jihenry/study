@@ -17,3 +17,5 @@ console.log("name:",name)
 
 console.log("student ",wang)
 console.log("student ",wang)
+
+console.log("ttxxxxx".startsWith("tt"))
