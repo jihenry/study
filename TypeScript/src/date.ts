@@ -1,12 +1,11 @@
-const time = new Date()
-
+const time = new Date(1571481741)
 console.log(time.getFullYear())
 console.log(time.getMonth())
 console.log(time.getDay())
 console.log(time.getHours())
 console.log(time.getMinutes())
 console.log(time.getSeconds())
-console.log(Math.ceil(Date.now()/1000));
+console.log(Math.ceil(Date.now() / 1000));
 console.log(Math.ceil(Date.now()));
 // console.log(Math.ceil(Date.now()));
 // console.log(new Date(2018, 10, 26).toString());

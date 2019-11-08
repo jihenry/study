@@ -143,5 +143,28 @@ function decode(base64) {
     return str;
 }
 
-console.log(encode(str)); //JUU2JTgwJUFBJUU4JUFGJTlFJUU1JTkyJTk2JUU1JTk1JUEx
-console.log(decode(encode(str))); //怪诞咖啡
+// console.log(encode(str)); //JUU2JTgwJUFBJUU4JUFGJTlFJUU1JTkyJTk2JUU1JTk1JUEx
+// console.log(decode(encode(str))); //怪诞咖啡
+
+
+function truncated(str, num) {
+    let s = '';
+    for (let v of str) {
+        s += v;
+        num--;
+        if (num <= 0) {
+            break;
+        }
+    }
+    return s;
+}
+
+function length(str) {
+    let length = 0
+    for (let v of str) {
+        length++
+    }
+    return length;
+}
+
+console.log(length("王冬春abc11"))
