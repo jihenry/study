@@ -2,3 +2,6 @@
 /Go/fileserver/debug
 /TypeScript/dist
 /TypeScript/node_modules
+/Python/python3/server/upload
+/Python/python3/server/download
+/Python/python3/client/download
