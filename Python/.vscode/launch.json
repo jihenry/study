@@ -8,7 +8,6 @@
         "type": "python",
         "request": "launch",
         "program": "${file}",
-        "console": "integratedTerminal",
         "pythonPath": "D:\\environment\\python\\python.exe"
     }]
 }
