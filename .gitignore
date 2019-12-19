@@ -5,3 +5,8 @@
 /Python/python3/server/upload
 /Python/python3/server/download
 /Python/python3/client/download
+Go/lang/practise/*.o
+/Go/web/fileserver/debug
+/Go/pkg
+/Go/.vscode
+/Go/src/lang/pprof/data/*.exe
