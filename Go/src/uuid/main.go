@@ -6,8 +6,6 @@ import (
 	"math/rand"
 	"time"
 
-	"gotest/libgo"
-
 	"github.com/chilts/sid"
 	"github.com/kjk/betterguid"
 	"github.com/oklog/ulid"
@@ -70,5 +68,4 @@ func main() {
 	genSonyflake()
 	genSid()
 	genUUIDv4()
-	libgo.TTestName()
 }

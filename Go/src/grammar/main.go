@@ -103,14 +103,14 @@ func testSlice() {
 }
 
 func sliceTest() {
-	arr := []int{1, 2, 3, 4, 5}
+	arr := []int{6, 2, 3, 4, 5}
 	s := arr[:]
-	for e := range s {
-		fmt.Println(s[e])
+	for e, v := range s {
+		fmt.Println(s[e], v)
 	}
 	s1 := make([]int, 3)
-	for e := range s1 {
-		fmt.Println(s1[e])
+	for e, v := range s1 {
+		fmt.Println(s1[e], v)
 	}
 }
 
@@ -284,9 +284,10 @@ func main() {
 	// for k, v := range a {
 	// 	fmt.Println(k, v)
 	// }
-	a := true
-	b := 1
-	if a && b == 1 {
-		fmt.Println("xxxxxxxxxx")
-	}
+	// a := true
+	// b := 1
+	// if a && b == 1 {
+	// 	fmt.Println("xxxxxxxxxx")
+	// }
+	sliceTest()
 }

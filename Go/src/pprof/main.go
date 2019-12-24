@@ -1,7 +1,7 @@
 package main
 
 import (
-	"lang/pprof/data"
+	"pprof/data"
 	"log"
 	"net/http"
 	_ "net/http/pprof"
