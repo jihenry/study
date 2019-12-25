@@ -13,6 +13,7 @@ import (
 //PORT ...
 const PORT = "9001"
 
+//https://eddycjy.gitbook.io/golang/di-4-ke-grpc/ca-tls
 func main() {
 	//1. 使用证书，第二个参数生成证书指定的Name
 	c, err := credentials.NewClientTLSFromFile("../../conf/server/server.pem", "go-grpc-viking")
