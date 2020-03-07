@@ -29,7 +29,8 @@ func printMethod(x interface{}) {
 	fmt.Println(v.NumMethod())
 	for index := 0; index < v.NumMethod(); index++ {
 		method := v.Method(index)
-		fmt.Printf("method type:%s name:%s type2:%s", method.Type(), t.Method(index).Name, t.Method(index).Type)
+		fmt.Printf("vmethod:%#v tmethod:%#v method type:%s name:%s type2:%s\n", method, t.Method(index),
+			method.Type(), t.Method(index).Name, t.Method(index).Type)
 	}
 }
 
@@ -78,4 +79,10 @@ func main() {
 	m1[2] = "xxxx"
 	fmt.Println(m1, len(m1))
 	printMethod(student{})
+
+	var p []int32
+	for i := 0; i < 3; i++ {
+		p = append(p, int32(i))
+	}
+	fmt.Println("p:", p, len(p), cap(p))
 }
