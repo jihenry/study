@@ -10,3 +10,5 @@ Go/lang/practise/*.o
 /Go/pkg
 /Go/.vscode
 /Go/src/lang/pprof/data/*.exe
+**/*.exe
+Go/cpu.log

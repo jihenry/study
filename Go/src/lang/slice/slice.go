@@ -75,14 +75,19 @@ func main() {
 	// s2 := [10]int{1: 100, 9: 50}
 	// fmt.Println(s2, len(s2))
 
-	m1 := make(map[int]string, 20)
-	m1[2] = "xxxx"
-	fmt.Println(m1, len(m1))
-	printMethod(student{})
+	// m1 := make(map[int]string, 20)
+	// m1[2] = "xxxx"
+	// fmt.Println(m1, len(m1))
+	// printMethod(student{})
 
-	var p []int32
-	for i := 0; i < 3; i++ {
-		p = append(p, int32(i))
+	// var p []int32
+	// for i := 0; i < 3; i++ {
+	// 	p = append(p, int32(i))
+	// }
+	// fmt.Println("p:", p, len(p), cap(p))
+	// s := make([]int, 3)[2:]
+	// fmt.Printf("cap(s)=%d s=%#v", cap(s), (*reflect.SliceHeader)(unsafe.Pointer(&s)))
+	for i, r := range "Hello, 世界" {
+		fmt.Printf("%d\t%q\t%d\n", i, r, r)
 	}
-	fmt.Println("p:", p, len(p), cap(p))
 }

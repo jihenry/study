@@ -41,8 +41,22 @@ func guestIType(v1 interface{}) {
 	fmt.Printf("v1 is sci:%v\n", isSc)
 }
 
+func guestType(v1 interface{}) {
+	switch v1.(type) {
+	case sp:
+		fmt.Println("guestType sp")
+	case sc:
+		fmt.Println("guestType sc")
+	case sci:
+		fmt.Println("guestType sci")
+	case spi:
+		fmt.Println("guestType spi")
+	}
+}
+
 func main() {
 	e := sp{}
 	guestSType(e)
 	guestIType(e)
+	guestType(e)
 }
