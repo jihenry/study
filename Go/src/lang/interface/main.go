@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 type spi interface {
 	pf(int) string
@@ -36,12 +39,17 @@ func switchFunc(v interface{}) {
 		fmt.Println("spi")
 	case sci:
 		fmt.Println("sci")
+	case map[string][]string:
+		fmt.Println("map[string][]string")
 	default:
 		fmt.Println("default")
 	}
 }
 
 func main() {
-	sp := sc{}
-	switchFunc(sp)
+	// sp := sc{}
+	m := make(map[string][]string)
+	switchFunc(m)
+	// fmt.Println(strconv.Quote("发发了饭\t"))
+	fmt.Println(strings.TrimPrefix("func :xxxaagaga", "func"))
 }

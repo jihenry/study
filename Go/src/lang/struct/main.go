@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
 type sp struct {
 	p1 string
@@ -55,8 +58,23 @@ func guestType(v1 interface{}) {
 }
 
 func main() {
-	e := sp{}
-	guestSType(e)
-	guestIType(e)
-	guestType(e)
+	// e := sp{}
+	// guestSType(e)
+	// guestIType(e)
+	// guestType(e)
+	a := 1
+	t1 := reflect.TypeOf(&a)
+
+	type CSType struct {
+		a int
+		b string
+		t reflect.Type
+	}
+	mc := make(map[CSType]bool)
+	cd := CSType{a: 1, b: "222", t: t1}
+	mc[cd] = true
+	fmt.Printf("%#v\n", mc)
+	cd2 := CSType{a: 1, b: "222", t: reflect.TypeOf(&a)}
+	_, has := mc[cd2]
+	fmt.Printf("has:%#v", has)
 }
