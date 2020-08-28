@@ -1,4 +1,4 @@
-package main
+package channel
 
 import (
 	"fmt"
@@ -23,7 +23,7 @@ func f2(a chan int, b chan int) {
 	close(b)
 }
 
-func main() {
+func testChannel() {
 	wg.Add(2)
 	ch1 := make(chan int, 10)
 	ch2 := make(chan int, 10)
