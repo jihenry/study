@@ -5,36 +5,36 @@ import (
 	"reflect"
 )
 
-type sp struct {
+type ssp struct {
 	p1 string
 }
 
-func (sp) pf(a int) string {
+func (ssp) pf(a int) string {
 	return "pf"
 }
 
-func (sp) cf(a int) string {
+func (ssp) cf(a int) string {
 	return "cf"
 }
 
-type sc struct {
+type scType struct {
 	sp
 	c1 int
 }
 
-type spi interface {
+type spin interface {
 	pf(int) string
 }
 
-type sci interface {
+type scin interface {
 	cf(int) string
 }
 
 func guestSType(v1 interface{}) {
-	_, isSp := v1.(sp)
-	fmt.Printf("v1 is sp:%v\n", isSp)
-	_, isSc := v1.(sc)
-	fmt.Printf("v1 is sc:%v\n", isSc)
+	_, isSp := v1.(ssp)
+	fmt.Printf("v1 is ssp:%v\n", isSp)
+	_, isSc := v1.(scType)
+	fmt.Printf("v1 is scType:%v\n", isSc)
 }
 
 func guestIType(v1 interface{}) {

@@ -6,7 +6,7 @@ import (
 
 	"google.golang.org/grpc"
 
-	pb "rpc/proto"
+	pb "study/thirdlib/grpc/proto"
 )
 
 //StreamService ...

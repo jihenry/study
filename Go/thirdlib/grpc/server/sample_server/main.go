@@ -8,7 +8,7 @@ import (
 	"os"
 	"path/filepath"
 
-	pb "rpc/proto"
+	pb "study/thirdlib/grpc/proto"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
