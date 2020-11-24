@@ -12,3 +12,6 @@ Go/lang/practise/*.o
 /Go/src/lang/pprof/data/*.exe
 **/*.exe
 Go/cpu.log
+Go/profile
+Go/main.o
+Go/main

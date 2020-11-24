@@ -3,6 +3,7 @@ module study
 go 1.13
 
 require (
+	github.com/AlDanial/cloc v0.0.0-20201116020312-02aae74aabda // indirect
 	github.com/chilts/sid v0.0.0-20190607042430-660e94789ec9
 	github.com/golang/protobuf v1.4.3
 	github.com/kjk/betterguid v0.0.0-20170621091430-c442874ba63a
